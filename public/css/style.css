@@ -1,0 +1,159 @@
+
+
+
+/* general bg */
+body {
+    background-color: #f4f1ea;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+.nav-logo {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-links {
+    display: flex;
+    gap: 25px; /* Memberi jarak otomatis antar menu */
+    align-items: center;
+}
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.nav-link:hover {
+    color: #000;
+}
+
+/* hero section */
+.main-container {
+    padding: 40px 50px;
+}
+.hero-subtitle {
+    font-size: 12px;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.hero-title {
+    font-size: 48px;
+    color: #111;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hero-desc {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+/* search bar */
+.search-bar {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.search-label {
+    font-size: 10px;
+    color: #888;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.search-value {
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-dark {
+    background-color: #1b2622;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-dark:hover {
+    background-color: #2c3e37;
+}
+
+/* room section */
+.rooms-section {
+    margin-top: 80px;
+}
+.section-title {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 5px;
+}
+.section-desc {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.room-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.room-card {
+    flex: 1;
+}
+.room-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.room-title {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #111;
+}
+.room-desc {
+    color: #666;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+.room-features {
+    color: #888;
+    font-size: 11px;
+    margin: 0 0 15px 0;
+}
+.room-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.room-price {
+    font-weight: 600;
+    font-size: 14px;
+    color: #111;
+}
+.btn-link {
+    color: #111;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-link:hover {
+    text-decoration: underline;
+}
