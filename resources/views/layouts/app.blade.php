@@ -16,7 +16,7 @@
             <a href="#" class="nav-link">Rooms</a>
             <a href="#" class="nav-link">Amenities</a>
             <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link" style="margin-left: 20px;">Sign in</a>
+            <a href="/login" class="nav-link" style="margin-left: 20px;">Login</a>
         </div>
     </nav>
 
