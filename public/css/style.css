@@ -295,3 +295,123 @@ body {
     outline: none;
     border-color: #111; /* Garis jadi hitam saat mengetik */
 }
+/* search bar */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.search-field {
+    display: flex;
+    flex-direction: column;
+}
+.search-input {
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #111;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+    margin-top: 4px;
+}
+.search-input:focus {
+    outline: none;
+}
+/* footer */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 60px 50px 30px;
+    margin-top: 80px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-col-main {
+    flex: 2;
+}
+.footer-logo {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #111;
+}
+.footer-about {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+.footer-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links li {
+    margin-bottom: 12px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.footer-links a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+.footer-bottom {
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+}
+/* checkout/reservation */
+.checkout-title {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.summary-divider {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+}
+.summary-row.total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 0;
+}

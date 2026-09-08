@@ -6,25 +6,42 @@
     <h1 class="hero-title">Find your room.<br>Make yourself at home.</h1>
     <p class="hero-desc">Comfortable rooms, transparent pricing, and a seamless booking experience.</p>
 
-    <!-- Search Bar -->
+   <!-- Search Bar -->
     <div class="search-bar">
-        <div>
-            <span class="search-label">DESTINATION</span>
-            <span class="search-value">Surabaya, Indonesia</span>
-        </div>
-        <div>
-            <span class="search-label">CHECK IN</span>
-            <span class="search-value">12 Sep 2026</span>
-        </div>
-        <div>
-            <span class="search-label">CHECK OUT</span>
-            <span class="search-value">14 Sep 2026</span>
-        </div>
-        <div>
-            <span class="search-label">GUESTS</span>
-            <span class="search-value">2 Guests · 1 Room</span>
-        </div>
-        <button class="btn-dark">Search rooms</button>
+        <!-- Kita ubah jadi tag <form> supaya datanya bisa dikirim -->
+        <form action="#" method="GET" class="search-form">
+
+            <div class="search-field">
+                <label class="search-label">DESTINATION</label>
+                <!-- Pakai input text biasa -->
+                <input type="text" name="destination" class="search-input" value="Surabaya, Indonesia" placeholder="Where to?">
+            </div>
+
+            <div class="search-field">
+                <label class="search-label">CHECK IN</label>
+                <!-- type="date" otomatis memunculkan kalender! -->
+                <input type="date" name="check_in" class="search-input">
+            </div>
+
+            <div class="search-field">
+                <label class="search-label">CHECK OUT</label>
+                <!-- type="date" otomatis memunculkan kalender! -->
+                <input type="date" name="check_out" class="search-input">
+            </div>
+
+            <div class="search-field">
+                <label class="search-label">GUESTS</label>
+                <!-- Tag <select> untuk membuat dropdown pilihan -->
+                <select name="guests" class="search-input">
+                    <option value="1">1 Guest · 1 Room</option>
+                    <option value="2" selected>2 Guests · 1 Room</option>
+                    <option value="3">2 Guests · 2 Rooms</option>
+                    <option value="4">3 Guests · 2 Rooms</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-dark">Search rooms</button>
+        </form>
     </div>
 
     <!-- Room Selection Section -->

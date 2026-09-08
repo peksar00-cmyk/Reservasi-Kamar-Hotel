@@ -37,7 +37,9 @@
             <h3 class="price-amount">Rp 1.850.000</h3>
             <p class="price-unit">per night</p>
 
-            <button class="btn-dark btn-full">Reserve Now</button>
+            <a href="/checkout-suite">
+                <button class="btn-dark btn-full">Reserve Now</button>
+            </a>
             <p class="price-notice">You won't be charged yet</p>
         </div>
 

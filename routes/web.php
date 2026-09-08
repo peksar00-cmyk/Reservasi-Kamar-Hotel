@@ -34,3 +34,12 @@ Route::get('/deluxe-king-room', function () {
 Route::get('/suite-room', function () {
     return view('suite-room');
 });
+Route::get('/checkout', function () {
+    return view('bookstandard');
+});
+Route::get('/checkout-deluxe', function () {
+    return view('bookdeluxe');
+});
+Route::get('/checkout-suite', function () {
+    return view('booksuite');
+});

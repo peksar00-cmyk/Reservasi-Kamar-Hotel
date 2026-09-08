@@ -22,7 +22,7 @@
                 <div class="amenity-item">✓ Free Wi-Fi</div>
                 <div class="amenity-item">✓ Air Conditioning</div>
                 <div class="amenity-item">✓ Flat-screen TV</div>
-                <div class="amenity-item">✓ En-suite Bathroom</div>
+                <div class="amenity-item">✓ Bathroom</div>
                 <div class="amenity-item">✓ Daily Housekeeping</div>
                 <div class="amenity-item">✓ Coffee/Tea Maker</div>
             </div>
@@ -33,7 +33,9 @@
             <h3 class="price-amount">Rp 950.000</h3>
             <p class="price-unit">per night</p>
 
-            <button class="btn-dark btn-full">Reserve Now</button>
+            <a href="/checkout">
+                <button class="btn-dark btn-full">Reserve Now</button>
+            </a>
             <p class="price-notice">You won't be charged yet</p>
         </div>
 
