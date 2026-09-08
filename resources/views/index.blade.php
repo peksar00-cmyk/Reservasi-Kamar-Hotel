@@ -37,11 +37,11 @@
             <div class="room-card">
                 <img src="{{ asset('images/standardroom.jpeg') }}" alt="Standard Room" class="room-img">
                 <h3 class="room-title">Standard Room</h3>
-                <p class="room-desc">Nyaman, tenang, dan cocok untuk 2 org.</p>
-                <p class="room-features">28 m² · 2 org</p>
+                <p class="room-desc">A Comfy, chill place to stay.</p>
+                <p class="room-features">28 m² · 2 peoples</p>
                 <div class="room-footer">
                     <span class="room-price">Rp 950.000 / night</span>
-                    <a href="#" class="btn-link">Lihat</a>
+                    <a href="/standard-room" class="btn-link">Lihat</a>
                 </div>
             </div>
 
@@ -49,11 +49,11 @@
             <div class="room-card">
                 <img src="{{ asset('images/deluxekingroom.jpeg') }}" alt="Deluxe King" class="room-img">
                 <h3 class="room-title">Deluxe King</h3>
-                <p class="room-desc">Lebih luas,tempat tidur king size, dan pemandangam kota.</p>
-                <p class="room-features">38 m² · 2 org</p>
+                <p class="room-desc">WIder, King Size Bed, and City Views.</p>
+                <p class="room-features">38 m² · 2 peoples </p>
                 <div class="room-footer">
-                    <span class="room-price">Rp 1.250.000 / malam</span>
-                    <a href="#" class="btn-link">Lihat</a>
+                    <span class="room-price">Rp 1.250.000 / night</span>
+                    <a href="/deluxe-king-room" class="btn-link">Lihat</a>
                 </div>
             </div>
 
@@ -61,11 +61,11 @@
             <div class="room-card">
                 <img src="{{ asset('images/suiteroom.jpeg') }}" alt="Suite" class="room-img">
                 <h3 class="room-title">Suite</h3>
-                <p class="room-desc">Ruang yang luas dengan area tamu yang terpisah.</p>
-                <p class="room-features">52 m² · 2 org 1 bayi</p>
+                <p class="room-desc">Giant room with a separate living area.</p>
+                <p class="room-features">52 m² · 2-3 peoples</p>
                 <div class="room-footer">
-                    <span class="room-price">Rp 1.850.000 / malam</span>
-                    <a href="#" class="btn-link">Lihat</a>
+                    <span class="room-price">Rp 1.850.000 / night</span>
+                    <a href="/suite-room" class="btn-link">Lihat</a>
                 </div>
             </div>
         </div>

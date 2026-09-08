@@ -13,8 +13,7 @@
     <nav class="navbar">
         <h2 class="nav-logo">STAYEASE</h2>
         <div class="nav-links">
-            <a href="#" class="nav-link">Rooms</a>
-            <a href="#" class="nav-link">Amenities</a>
+            <a href="/" class="nav-link">Rooms</a>
             <a href="#" class="nav-link">About</a>
             <a href="/login" class="nav-link" style="margin-left: 20px;">Login</a>
         </div>

@@ -12,3 +12,12 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+Route::get('/standard-room', function () {
+    return view('standard-room');
+});
+Route::get('/deluxe-king-room', function () {
+    return view('deluxe-king-room');
+});
+Route::get('/suite-room', function () {
+    return view('suite-room');
+});
