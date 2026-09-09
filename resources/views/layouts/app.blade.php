@@ -14,7 +14,7 @@
         <h2 class="nav-logo">STAYEASE</h2>
         <div class="nav-links">
             <a href="/" class="nav-link">Rooms</a>
-            <a href="#" class="nav-link">About</a>
+            <a href="#bagian-bawah" class="nav-link">About</a>
             <a href="/login" class="nav-link" style="margin-left: 20px;">Login</a>
         </div>
     </nav>
@@ -40,12 +40,13 @@
             <div class="footer-col">
                 <h3 class="footer-title">Explore</h3>
                 <ul class="footer-links">
-                    <li><a href="#">Rooms & Suites</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="/">Rooms & Suites</a></li>
+                    <li><a href="#bagian-bawah">About Us</a></li>
                 </ul>
             </div>
 
             <!-- Kolom 3: Contact -->
+            <div id="bagian-bawah"></div>
             <div class="footer-col">
                 <h3 class="footer-title">Contact</h3>
                 <ul class="footer-links">
@@ -62,6 +63,6 @@
             &copy; 2026 StayEase Hotel. All rights reserved. Crafted by [Kevinno, Reyhan].
         </div>
     </footer>
-<script src="{{ asset('js/script.js') }}?v=2"></script>
+<script src="{{ asset('js/script.js') }}?v=3"></script>
 </body>
 </html>

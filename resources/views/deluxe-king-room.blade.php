@@ -14,7 +14,7 @@
             <p class="detail-meta">38 m² · 2 guests · 1 King Bed</p>
 
             <p class="detail-desc">
-                A calm, comfortable room for two. Thoughtfully designed with minimalistic touches, this space provides everything you need for a restful stay after a long day of exploring or working.
+                Relax in style in our Deluxe King Room, featuring a plush king-size bed, a dedicated workspace, and a marble bathroom with a rainfall shower.
             </p>
 
             <h3 class="detail-subtitle">Room Amenities</h3>

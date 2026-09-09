@@ -61,18 +61,18 @@
 
             <!-- Rincian Harga (Nanti angkanya bisa otomatis dari backend) -->
             <div class="summary-row">
-                <span>-Rp 950.000 x 2 nights</span>
-                <span>-Rp 1.900.000</span>
+                <span>Rp 950.000 x 2 nights</span>
+                <span>Rp 1.900.000</span>
             </div>
             <div class="summary-row">
                 <span>-Taxes & Fees (10%)</span>
-                <span>-Rp 190.000</span>
+                <span>Rp 190.000</span>
             </div>
 
             <div class="summary-divider"></div>
 
             <div class="summary-row total">
-                <span>-Total</span>
+                <span>Total</span>
                 <span>Rp 2.090.000</span>
             </div>
 

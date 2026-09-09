@@ -31,18 +31,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 2. EFEK LOADING SAAT FORM SUBMIT
     // Cari semua form di halaman
+    // 2. EFEK LOADING SAAT FORM SUBMIT
     const forms = document.querySelectorAll('form');
 
     forms.forEach(form => {
         form.addEventListener('submit', function() {
-            // Cari tombol submit di dalam form tersebut
             const submitBtn = this.querySelector('button[type="submit"]');
 
             if (submitBtn) {
-                // Ubah teks dan tampilannya saat tombol ditekan
+                // Simpan teks asli tombolnya (misal: "Search rooms")
+                const originalText = submitBtn.innerHTML;
+
+                // Ubah jadi processing
                 submitBtn.innerHTML = 'Processing...';
                 submitBtn.style.opacity = '0.7';
                 submitBtn.style.cursor = 'wait';
+
+                // JURUS RESET: Kembalikan ke kondisi semula setelah 2 detik
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.cursor = 'pointer'; // Balikkan logo mouse jadi tangan lagi
+                }, 2000);
             }
         });
     });

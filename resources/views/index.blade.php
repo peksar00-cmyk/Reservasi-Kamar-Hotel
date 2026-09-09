@@ -33,10 +33,10 @@
                 <label class="search-label">GUESTS</label>
                 <!-- Tag <select> untuk membuat dropdown pilihan -->
                 <select name="guests" class="search-input">
-                    <option value="1">1 Guest · 1 Room</option>
-                    <option value="2" selected>2 Guests · 1 Room</option>
-                    <option value="3">2 Guests · 2 Rooms</option>
-                    <option value="4">3 Guests · 2 Rooms</option>
+                    <option value="1" selected>1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
                 </select>
             </div>
 

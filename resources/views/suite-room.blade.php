@@ -14,9 +14,8 @@
             <p class="detail-meta">52 m² · 2 guests · 1 King Bed</p>
 
             <p class="detail-desc">
-                A calm, comfortable room for two. Thoughtfully designed with minimalistic touches, this space provides everything you need for a restful stay after a long day of exploring or working.
+                A luxurious and spacious suite designed for comfort and relaxation. Featuring a king-sized bed, separate living area, modern amenities, and elegant décor, this suite offers the perfect retreat after a day of exploration or business meetings.
             </p>
-
             <h3 class="detail-subtitle">Room Amenities</h3>
             <div class="amenities-grid">
                 <div class="amenity-item">✓ Way Larger Area</div>

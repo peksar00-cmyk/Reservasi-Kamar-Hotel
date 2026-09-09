@@ -43,7 +43,9 @@ Route::get('/checkout-deluxe', function () {
 Route::get('/checkout-suite', function () {
     return view('booksuite');
 });
-
+Route::get('/guests', function () {
+    return view('moreperson');
+});
 
 use Illuminate\Http\Request;
 
@@ -58,15 +60,15 @@ Route::get('/search-action', function (Request $request) {
 
     } elseif ($jumlahTamu == '2') {
         // Jika pilih 2 Guests, lempar ke halaman Standard Room juga (karena muat 2 orang)
-        return redirect('/standard-room');
+        return redirect('/guests');
 
     } elseif ($jumlahTamu == '3') {
         // Jika pilih 3 Guests, (nanti) lempar ke halaman Deluxe
         // Sementara kita lempar ke home dulu karena halamannya belum kamu buat
-        return redirect('/');
+        return redirect('/suite-room');
 
     } else {
         // Jika pilih 4 Guests, (nanti) lempar ke halaman Suite
-        return redirect('/');
+        return redirect('/suite-room');
     }
 });
