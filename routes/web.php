@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Usercontroller;
+use App\Http\Controllers\BookingController;
 
 //Route::get('/index', function () {
     //return view('index');
@@ -46,6 +47,8 @@ Route::get('/checkout-suite', function () {
 Route::get('/guests', function () {
     return view('moreperson');
 });
+
+Route::post('/search-action', [BookingController::class, 'store'])->name('booking.store');
 
 use Illuminate\Http\Request;
 
