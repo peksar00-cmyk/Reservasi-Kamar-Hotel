@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     // Tampilkan Form Register
+
+
     public function showRegister()
     {
         return view('register');
