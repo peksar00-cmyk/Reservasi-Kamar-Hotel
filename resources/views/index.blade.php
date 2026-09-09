@@ -9,7 +9,7 @@
    <!-- Search Bar -->
     <div class="search-bar">
         <!-- Kita ubah jadi tag <form> supaya datanya bisa dikirim -->
-        <form action="#" method="GET" class="search-form">
+        <form action="{{ url('/search-action') }}" method="GET" class="search-form">
 
             <div class="search-field">
                 <label class="search-label">DESTINATION</label>

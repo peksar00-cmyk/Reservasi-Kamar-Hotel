@@ -43,3 +43,30 @@ Route::get('/checkout-deluxe', function () {
 Route::get('/checkout-suite', function () {
     return view('booksuite');
 });
+
+
+use Illuminate\Http\Request;
+
+Route::get('/search-action', function (Request $request) {
+    // 1. Tangkap angka yang dipilih dari <select name="guests">
+    $jumlahTamu = $request->guests;
+
+    // 2. Buat logika pengarahannya (Redirect)
+    if ($jumlahTamu == '1') {
+        // Jika pilih 1 Guest, lempar ke halaman Standard Room
+        return redirect('/standard-room');
+
+    } elseif ($jumlahTamu == '2') {
+        // Jika pilih 2 Guests, lempar ke halaman Standard Room juga (karena muat 2 orang)
+        return redirect('/standard-room');
+
+    } elseif ($jumlahTamu == '3') {
+        // Jika pilih 3 Guests, (nanti) lempar ke halaman Deluxe
+        // Sementara kita lempar ke home dulu karena halamannya belum kamu buat
+        return redirect('/');
+
+    } else {
+        // Jika pilih 4 Guests, (nanti) lempar ke halaman Suite
+        return redirect('/');
+    }
+});
