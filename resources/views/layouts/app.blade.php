@@ -62,6 +62,6 @@
             &copy; 2026 StayEase Hotel. All rights reserved. Crafted by [Kevinno, Reyhan].
         </div>
     </footer>
-
+<script src="{{ asset('js/script.js') }}?v=2"></script>
 </body>
 </html>
