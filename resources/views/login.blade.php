@@ -36,8 +36,8 @@
             <input type="password" name="password" class="form-input" placeholder="••••••••" required>
         </div>
 
-        {{-- 4. Hapus tag <a> dari dalam button --}}
-        <button type="submit" class="btn-dark btn-full"><a href="{{ route('index') }}" style="color: white; text-decoration: none;">Sign in</a></button>
+
+        <button type="submit" class="btn-dark btn-full">Sign in</button>
     </form>
 
     <div style="text-align: center; margin-top: 20px;">

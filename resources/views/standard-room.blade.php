@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="detail-container">
 
     <!-- Gambar Kamar Utama -->
@@ -33,8 +34,7 @@
             <h3 class="price-amount">Rp 950.000</h3>
             <p class="price-unit">per night</p>
 
-                <button onclick="window.location.href='{{ url('/checkout') }}'" class="btn-dark btn-full">Reserve Now</button>
-
+                <a href="{{ url('/checkout/standard') }}" class="btn-dark btn-full" style="display: block; text-decoration: none;">Reserve Now</a>
             <p class="price-notice">You won't be charged yet</p>
         </div>
 

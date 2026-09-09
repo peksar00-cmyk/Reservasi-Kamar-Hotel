@@ -33,9 +33,8 @@
             <h3 class="price-amount">Rp 950.000</h3>
             <p class="price-unit">per night</p>
 
-            <a href="/checkout">
-                <button class="btn-dark btn-full">Reserve Now</button>
-            </a>
+            <a href="{{ url('/checkout/standard') }}" class="btn-dark btn-full" style="display: block; text-decoration: none;">Reserve Now</a>
+
             <p class="price-notice">You won't be charged yet</p>
         </div>
 
@@ -75,9 +74,8 @@
             <h3 class="price-amount">Rp 1.250.000</h3>
             <p class="price-unit">per night</p>
 
-            <a href="/checkout-deluxe">
-                <button class="btn-dark btn-full">Reserve Now</button>
-            </a >
+            <a href="{{ url('/checkout/deluxe') }}" class="btn-dark btn-full" style="display: block; text-decoration: none;">Reserve Now</a>
+
             <p class="price-notice">You won't be charged yet</p>
         </div>
 

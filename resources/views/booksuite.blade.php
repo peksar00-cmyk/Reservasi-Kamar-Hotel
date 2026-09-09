@@ -50,35 +50,33 @@
 
             <div class="summary-row">
                 <span>Check-in</span>
-                <span style="color: #111; font-weight: 500;">12 Sep 2026</span>
+                <span style="color: #111; font-weight: 500;">{{ $checkIn }}</span>
             </div>
             <div class="summary-row">
                 <span>Check-out</span>
-                <span style="color: #111; font-weight: 500;">14 Sep 2026</span>
+                <span style="color: #111; font-weight: 500;">{{ $checkOut }}</span>
             </div>
 
             <div class="summary-divider"></div>
 
-            <!-- Rincian Harga (Nanti angkanya bisa otomatis dari backend) -->
+            <!-- number_format digunakan agar angkanya punya titik ribuan otomatis -->
             <div class="summary-row">
-                <span>Rp 950.000 x 2 nights</span>
-                <span>Rp 1.900.000</span>
+                <span>Rp {{ number_format($roomPrice, 0, ',', '.') }} x {{ $nights }} nights</span>
+                <span>Rp {{ number_format($subtotal, 0, ',', '.') }}</span>
             </div>
             <div class="summary-row">
-                <span>-Taxes & Fees (10%)</span>
-                <span>Rp 190.000</span>
+                <span>Taxes & Fees (10%)</span>
+                <span>Rp {{ number_format($tax, 0, ',', '.') }}</span>
             </div>
 
             <div class="summary-divider"></div>
 
             <div class="summary-row total">
                 <span>Total</span>
-                <span>Rp 2.090.000</span>
+                <span>Rp {{ number_format($grandTotal, 0, ',', '.') }}</span>
             </div>
 
-            <button class="btn-dark btn-full" style="margin-top: 25px;">Confirm & Pay</button>
-        </div>
-
-    </div>
-</div>
+            <a href="/end">
+                <button class="btn-dark btn-full" style="margin-top: 25px;">Confirm & Pay</button>
+            </a>
 @endsection
