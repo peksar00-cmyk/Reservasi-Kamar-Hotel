@@ -10,14 +10,25 @@
 <body>
 
 <!-- navbar -->
+
     <nav class="navbar">
         <h2 class="nav-logo">STAYEASE</h2>
         <div class="nav-links">
-            <a href="/" class="nav-link">Rooms</a>
+            <a href="/main" class="nav-link">Rooms</a>
             <a href="#bagian-bawah" class="nav-link">About</a>
             <a href="/login" class="nav-link" style="margin-left: 20px;">Login</a>
+               <div style="display: flex; align-items: center; gap: 15px;">
+
+    <!-- Tombol Back Bulat dengan SVG -->
+    <a href="javascript:history.back()" class="circle-back-btn" title="Go Back">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </a>
+    </div>
         </div>
     </nav>
+
 
     <!-- Tempat Konten Utama -->
     <main class="main-container">
@@ -40,7 +51,7 @@
             <div class="footer-col">
                 <h3 class="footer-title">Explore</h3>
                 <ul class="footer-links">
-                    <li><a href="/">Rooms & Suites</a></li>
+                    <li><a href="/main">Rooms & Suites</a></li>
                     <li><a href="#bagian-bawah">About Us</a></li>
                 </ul>
             </div>

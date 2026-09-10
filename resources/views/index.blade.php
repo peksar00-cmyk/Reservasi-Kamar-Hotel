@@ -53,7 +53,6 @@
         <h3 class="room-name">{{ $room->name }}</h3>
         <p class="room-desc">{{ $room->description }}</p>
         <!-- Mengarahkan ke detail kamar spesifik berdasarkan ID -->
-        <a href="{{ url('/room/' . $room->id) }}" class="room-link" style="color: #695840; text-decoration: underline;">View details</a>
     </div>
     @endforeach
     </div>

@@ -77,12 +77,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Usercontroller;
 use App\Http\Controllers\BookingController;
 
-Route::get('/', function () {
+Route::get('/main', function () {
     $rooms = Room::all();
     return view('index', ['rooms' => $rooms]);
 })->name('index');
 
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('login');
 });
 
@@ -143,3 +143,8 @@ Route::get('/search-action', function (Illuminate\Http\Request $request) {
 Route::get('/end', function () {
     return view('terimakasih');
 });
+use App\Http\Controllers\AuthController;
+
+// Sesuaikan '/proses-register' dengan action="..." di form register HTML-mu
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);

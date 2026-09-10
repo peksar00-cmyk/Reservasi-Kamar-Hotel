@@ -439,3 +439,37 @@ body {
         opacity: 0;
     }
 }
+/* --- TOMBOL BACK LINGKARAN --- */
+.circle-back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;       /* Ubah angka ini untuk membesarkan/mengecilkan lingkaran */
+    height: 42px;
+
+    /* PENGATURAN WARNA BACKGROUND */
+    /* Saat ini pakai warna hijau gradasi persis seperti gambarmu */
+    background: linear-gradient(135deg, #bbbbbb, #998b11);
+
+    /* Kalau mau diganti warna gelap khas web-mu, hapus kode background di atas, lalu pakai ini: */
+    /* background: #111; */
+
+    color: white;      /* Warna ikon panahnya */
+    border-radius: 50%; /* Membuatnya bulat sempurna */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Bayangan tipis biar elegan */
+}
+
+.circle-back-btn:hover {
+    transform: scale(1.08); /* Efek membesar sedikit saat disentuh mouse */
+    opacity: 0.9;
+}
+
+/* Ukuran ikon panah di dalamnya */
+.circle-back-btn svg {
+    width: 22px;
+    height: 22px;
+    /* Geser sedikit ke kanan biar terlihat seimbang di tengah lingkaran */
+    margin-right: 2px;
+}

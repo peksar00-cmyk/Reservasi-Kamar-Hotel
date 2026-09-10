@@ -9,34 +9,35 @@
     <div class="detail-layout">
 
         <!-- Bagian Kiri: Guest Details Form -->
-        <div class="detail-info">
-            <h3 class="detail-subtitle">Guest Details</h3>
 
-            <form action="#" method="POST">
-                @csrf
-                <div class="form-group">
-                    <label class="form-label">FULL NAME</label>
-                    <input type="text" class="form-input" placeholder="John Doe" required>
-                </div>
+<div class="detail-info">
+    <h3 class="detail-subtitle">Guest Details</h3>
 
-                <div class="form-group">
-                    <label class="form-label">EMAIL</label>
-                    <input type="email" class="form-input" placeholder="you@example.com" required>
-                </div>
+<div class="form-group">
+    <label class="form-label">FULL NAME</label>
+    <!-- Ganti menjadi session('user_name') -->
+    <input type="text" name="name" class="form-input"
+           value="{{ session('user_name') ?? '' }}" required>
+</div>
 
-                <div class="form-group">
-                    <label class="form-label">PHONE NUMBER</label>
-                    <input type="tel" class="form-input" placeholder="+62 812 3456 7890" required>
-                </div>
-
-                <!-- Tambahan opsional: Catatan khusus -->
+<div class="form-group">
+    <label class="form-label">EMAIL</label>
+    <!-- Ganti menjadi session('user_email') -->
+    <input type="email" name="email" class="form-input"
+           value="{{ session('user_email') ?? '' }}" required>
+</div>
+                        <!-- Tambahan opsional: Catatan khusus -->
                 <h3 class="detail-subtitle" style="margin-top: 40px;">Special Requests</h3>
                 <div class="form-group form-group-last">
                     <!-- Textarea untuk inputan multi-baris -->
                     <textarea class="form-input" rows="4" placeholder="Any special requests? (Optional)"></textarea>
                 </div>
             </form>
-        </div>
+
+
+        <!-- ... (bagian special requests tetap sama) ... -->
+    </form>
+</div>
 
         <!-- Bagian Kanan: Booking Summary -->
         <div class="price-box">
