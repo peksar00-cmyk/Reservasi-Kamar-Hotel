@@ -473,3 +473,47 @@ body {
     /* Geser sedikit ke kanan biar terlihat seimbang di tengah lingkaran */
     margin-right: 2px;
 }
+
+
+/* --- HALAMAN TERIMA KASIH (POP-UP SUCCESS) --- */
+.terimakasih-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+}
+
+.success-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.check-icon {
+    color: #38ef7d;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.home-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #9c9020;
+    color: #111;
+}

@@ -140,7 +140,7 @@ Route::get('/search-action', function (Illuminate\Http\Request $request) {
         return redirect('/room/3');
     }
 });
-Route::get('/end', function () {
+Route::get('/terimakasih', function () {
     return view('terimakasih');
 });
 use App\Http\Controllers\AuthController;
@@ -148,3 +148,7 @@ use App\Http\Controllers\AuthController;
 // Sesuaikan '/proses-register' dengan action="..." di form register HTML-mu
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
+
+Route::post('/checkout/standard', [BookingController::class, 'store']);
+Route::post('/checkout/deluxe', [BookingController::class, 'store']);
+Route::post('/checkout/suite', [BookingController::class, 'store']);

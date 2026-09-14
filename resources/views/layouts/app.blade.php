@@ -62,8 +62,8 @@
                 <h3 class="footer-title">Contact</h3>
                 <ul class="footer-links">
                     <li><a href="#">nipeksar10@stayease.com</a></li>
-                    <li><a href="#">+62 8969 928 4385</a></li>
-                    <li><a href="#">Surabaya, Indonesia</a></li>
+                    <li><a href="#">+62 896-9928-4385</a></li>
+                    <li><a href="https://www.google.com/maps/@-7.2800816,112.7397268,14z?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D">Surabaya, Indonesia</a></li>
                 </ul>
             </div>
 

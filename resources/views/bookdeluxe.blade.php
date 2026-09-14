@@ -8,37 +8,45 @@
 
     <div class="detail-layout">
 
-        <!-- Bagian Kiri: Guest Details Form -->
-<div class="detail-info">
-    <h3 class="detail-subtitle">Guest Details</h3>
+<form action="/checkout/deluxe" method="POST">
+    @csrf
 
-<div class="form-group">
-    <label class="form-label">FULL NAME</label>
-    <!-- Ganti menjadi session('user_name') -->
-    <input type="text" name="name" class="form-input"
-           value="{{ session('user_name') ?? '' }}" required>
-</div>
+    <div class="form-group">
+        <label class="form-label">FULL NAME</label>
+        <input type="text" name="name" class="form-input" value="{{ session('user_name') ?? '' }}" required>
+    </div>
 
-<div class="form-group">
-    <label class="form-label">EMAIL</label>
-    <!-- Ganti menjadi session('user_email') -->
-    <input type="email" name="email" class="form-input"
-           value="{{ session('user_email') ?? '' }}" required>
-</div>
-                        <!-- Tambahan opsional: Catatan khusus -->
-                <h3 class="detail-subtitle" style="margin-top: 40px;">Special Requests</h3>
-                <div class="form-group form-group-last">
-                    <!-- Textarea untuk inputan multi-baris -->
-                    <textarea class="form-input" rows="4" placeholder="Any special requests? (Optional)"></textarea>
-                </div>
-            </form>
-</div>
+    <div class="form-group">
+        <label class="form-label">EMAIL</label>
+        <input type="email" name="email" class="form-input" value="{{ session('user_email') ?? '' }}" required>
+    </div>
+
+    <!-- 1. TAMBAHAN: Input Nomor Telepon -->
+    <div class="form-group">
+        <label class="form-label">PHONE NUMBER</label>
+        <input type="tel" name="phone" class="form-input" placeholder="+62" required>
+    </div>
+
+    <h3 class="detail-subtitle" style="margin-top: 40px;">Special Requests</h3>
+    <div class="form-group form-group-last">
+        <!-- 2. PENTING: Tambahkan name="special_requests" di sini -->
+        <textarea name="special_requests" class="form-input" rows="4" placeholder="Any special requests? (Optional)"></textarea>
+    </div>
+
+    <!-- 3. TAMBAHAN: Input tersembunyi untuk menyimpan nama kamar -->
+    <!-- (Ganti valuenya jadi "Deluxe Room" atau "Suite Room" di file blade lainnya) -->
+    <input type="hidden" name="room" value="Deluxe Room">
+
+    <!-- Pastikan tombol submit kamu ada di dalam tag </form> ya! -->
+    <button type="submit" class="home-btn" style="width: 100%; margin-top: 20px;">Confirm & Pay</button>
+
+</form>
 
 
         <!-- Bagian Kanan: Booking Summary -->
         <div class="price-box">
             <!-- Menampilkan gambar kecil kamar yang dipilih -->
-            <img src="{{ asset('images/deluxekingroom.jpeg') }}" alt="Deluxe Room" style="width: 100%; height: 140px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+            <img src="{{ asset('images/deluxekingroom.jpeg') }}" alt="Deluxe Room" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
 
             <h3 class="detail-subtitle" style="margin-bottom: 5px; margin-top: 0;">Deluxe Room</h3>
             <p class="detail-meta" style="margin-bottom: 20px;">35 m² · 2 guests</p>
@@ -74,7 +82,5 @@
 
 
             </div>
-            <a href="/end">
-                <button class="btn-dark btn-full" style="margin-top: 25px;">Confirm & Pay</button>
-            </a>
+
 @endsection
