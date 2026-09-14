@@ -23,6 +23,8 @@ class BookingController extends Controller
                 'email' => $request->email ?? 'Tanpa Email',
                 'phone' => $request->phone ?? 'Tanpa Telepon',
                 'room' => $request->room ?? 'Kamar Tidak Diketahui',
+                'check_in' => $request->check_in ?? 'Tanggal Check-in Tidak Diketahui',
+                'check_out' => $request->check_out ?? 'Tanggal Check-out Tidak Diketahui',
 
                 // INI BARIS BARU UNTUK MENANGKAP SPECIAL REQUESTS
                 'special_requests' => $request->special_requests ?? 'Tidak ada catatan khusus',

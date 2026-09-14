@@ -26,6 +26,19 @@
         <label class="form-label">PHONE NUMBER</label>
         <input type="tel" name="phone" class="form-input" placeholder="+62" required>
     </div>
+    <!-- Input Tanggal Check-in -->
+    <div class="form-group">
+        <label class="form-label">CHECK-IN DATE</label>
+        <input type="date" name="check_in" class="form-input" required
+            value="{{ session('check_in') }}" readonly required>
+    </div>
+
+    <!-- Input Tanggal Check-out -->
+    <div class="form-group">
+        <label class="form-label">CHECK-OUT DATE</label>
+        <input type="date" name="check_out" class="form-input" required
+            value="{{ session('check_out') }}" readonly required>
+    </div>
 
     <h3 class="detail-subtitle" style="margin-top: 40px;">Special Requests</h3>
     <div class="form-group form-group-last">
