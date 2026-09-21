@@ -152,3 +152,13 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/checkout/standard', [BookingController::class, 'store']);
 Route::post('/checkout/deluxe', [BookingController::class, 'store']);
 Route::post('/checkout/suite', [BookingController::class, 'store']);
+
+
+// Route::get('/admin', [Admincontroller::class, 'index'])->name('admin.index');
+
+use App\Http\Controllers\AdminAuthController;
+
+// Rute untuk halaman Login Admin
+Route::get('/login-admin', [AdminAuthController::class, 'showLoginForm']);
+Route::post('/login-admin', [AdminAuthController::class, 'login']);
+Route::get('/dashboard-admin', [App\Http\Controllers\AdminAuthController::class, 'dashboard']);

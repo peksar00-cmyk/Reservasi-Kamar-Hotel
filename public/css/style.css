@@ -517,3 +517,27 @@ body {
     background: #9c9020;
     color: #111;
 }
+        body { 
+            background-color: #f4f7f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; 
+        }
+        .header { 
+            display: flex; justify-content: space-between; align-items: center; background: #2c3e50; color: white; padding: 15px 30px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .table-container { 
+            background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow-x: auto; 
+        }
+        table { 
+            width: 100%; border-collapse: collapse; margin-top: 15px; 
+        }
+        th, td { 
+            padding: 12px 15px; text-align: left; border-bottom: 1px solid #eee; font-size: 14px;
+        }
+        th { 
+            background-color: #34495e; color: white; font-weight: 600; text-transform: uppercase; font-size: 13px;
+        }
+        tr:hover { 
+            background-color: #f8f9fa; 
+        }
+        .badge { 
+            background: #27ae60; color: white; padding: 5px 10px; border-radius: 12px; font-size: 12px; font-weight: bold;
+        }
